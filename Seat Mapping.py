@@ -3,6 +3,7 @@
 def load_seats(filename="seats.txt"):
     with open("F:/LPU/Python/Project/seat.txt", "r") as f:
         return [list(map(int, line.strip().split())) for line in f]
+        # use your own txt file for entering the seats data.
 
 def save_seats(seats, filename="seats.txt"):
     with open("F:/LPU/Python/Project/seat.txt", "w") as f:
@@ -55,4 +56,5 @@ def main():
             print("Invalid choice!")
 
 if __name__ == "__main__":
+
     main()
